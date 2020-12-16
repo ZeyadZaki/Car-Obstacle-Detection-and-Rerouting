@@ -3,7 +3,7 @@ Ahmed Abdelrahman 900161054
 Nouran Flaifel 900160793
 Zeyad Zaki 900160268
 Github Repo:
-
+https://github.com/ZeyadZaki/Car-Obstacle-Detection-and-Rerouting
 
 Project Description:
 In this project, we are designing and implementing a smart car that detects obstacles and reroutes. The car will be moving in a specific track to reach a final destination. It should be able to detect any obstacles that it faces and be able to reroute in order to avoid them while still aiming to reach the destination. The figure below shows the expected behaviour of the car in our system:
@@ -24,9 +24,9 @@ block
 
 CubeMx Configuration:
 The system clock frequency is set to 8MHz.
-UART1: to send the command packets from the microcontroller to the Pololu TReX DC Motor Controller.
-UART2: this is an optional connection to be able to observe the coordinates and the distances for debugging purposes.
-Tim1: timer in input capture mode for the ultra sonic sensor ("Echo" pin).
+UART1: to send the command packets from the microcontroller to the Pololu TReX DC Motor Controller. Should have baud rate 19200
+UART2: this is an optional connection to be able to observe the coordinates and the distances for debugging purposes. Should have baud rate 9600
+Tim1: timer in input capture mode for the ultra sonic sensor ("Echo" pin). Prescaler is set to 7.
 GPIO PIN: for the "Trig" pin in the ultrasonic sensor.
 cubemx
 
